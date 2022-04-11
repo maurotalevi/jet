@@ -1,10 +1,10 @@
 package org.codehaus.jet.hypothesis.testers;
 
-import static org.junit.Assert.assertTrue;
-
 import org.codehaus.jet.hypothesis.HypothesisTester;
 import org.codehaus.jet.hypothesis.rejection.RejectionValueType;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @author Mauro Talevi

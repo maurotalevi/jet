@@ -1,15 +1,15 @@
 package org.codehaus.jet.hypothesis.testers;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
 import java.util.Arrays;
 
 import org.codehaus.jet.hypothesis.RejectionValueEstimateFailedException;
 import org.codehaus.jet.hypothesis.HypothesisTest;
 import org.codehaus.jet.hypothesis.HypothesisTester;
 import org.codehaus.jet.hypothesis.rejection.RejectionValueType;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class DefaultHypothesisTesterTest {
 

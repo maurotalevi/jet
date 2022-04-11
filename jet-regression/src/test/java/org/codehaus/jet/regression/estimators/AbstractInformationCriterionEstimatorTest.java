@@ -1,11 +1,11 @@
 package org.codehaus.jet.regression.estimators;
 
-import static org.junit.Assert.assertTrue;
-
 import java.util.Random;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 
@@ -18,7 +18,7 @@ public abstract class AbstractInformationCriterionEstimatorTest {
     protected int T = 20;
     protected int p = 5;
     
-    @Before
+    @BeforeEach
     public void setUp(){
         estimator = createInformationCriterionEstimator();
         y = new double[T];

@@ -1,7 +1,7 @@
 package org.codehaus.jet.hypothesis.rejection.evaluators;
 
 import org.codehaus.jet.hypothesis.rejection.ResponseSurfaceEvaluator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * 

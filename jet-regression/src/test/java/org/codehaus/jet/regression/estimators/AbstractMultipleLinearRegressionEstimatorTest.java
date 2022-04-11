@@ -1,11 +1,11 @@
 package org.codehaus.jet.regression.estimators;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.codehaus.jet.regression.MultipleLinearRegressionEstimator;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 
@@ -15,7 +15,7 @@ public abstract class AbstractMultipleLinearRegressionEstimatorTest {
 
     private MultipleLinearRegressionEstimator regression;
 
-    @Before
+    @BeforeEach
     public void setUp(){
         regression = createRegressionEstimator();
     }

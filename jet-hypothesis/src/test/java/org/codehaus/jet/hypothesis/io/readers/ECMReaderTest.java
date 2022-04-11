@@ -1,10 +1,9 @@
 package org.codehaus.jet.hypothesis.io.readers;
 
-import static org.junit.Assert.assertEquals;
-
 import org.codehaus.jet.hypothesis.io.BetaReader;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * @author Mauro Talevi

@@ -1,11 +1,12 @@
 package org.codehaus.jet.hypothesis.rejection.estimators;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
 import org.codehaus.jet.hypothesis.rejection.RejectionValueEstimatorProvider;
 import org.codehaus.jet.hypothesis.rejection.RejectionValueType;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
+
 
 /**
  * 

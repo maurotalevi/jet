@@ -1,9 +1,9 @@
 package org.codehaus.jet.regression.estimators;
 
-import static java.lang.Math.E;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static java.lang.Math.E;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * 

@@ -1,8 +1,7 @@
 package org.codehaus.jet.regression.estimators;
 
 import org.codehaus.jet.regression.MultipleLinearRegressionEstimator;
-import org.junit.Before;
-
+import org.junit.jupiter.api.BeforeEach;
 
 /**
  * 
@@ -13,7 +12,7 @@ public class OLSMultipleLinearRegressionEstimatorTest extends AbstractMultipleLi
     private double[] y;
     private double[][] x;
     
-    @Before
+    @BeforeEach
     public void setUp(){
         y = new double[]{11.0, 12.0, 13.0, 14.0, 15.0, 16.0};
         x = new double[6][];

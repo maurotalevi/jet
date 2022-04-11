@@ -10,16 +10,11 @@
   <artifactId>jet-distribution</artifactId>
   <packaging>pom</packaging>
   <name>JET Distribution</name>
-  <scm>
-    <connection>scm:svn:http://svn.codehaus.org/jet/trunk</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/jet/trunk</developerConnection>
-    <url>http://svn.codehaus.org/jet/trunk</url>
-  </scm>
   <dependencies>
     <dependency>
-      <groupId>${pom.groupId}</groupId>
+      <groupId>${project.groupId}</groupId>
       <artifactId>jet-hypothesis</artifactId>
-      <version>${pom.version}</version>
+      <version>${project.version}</version>
     </dependency>
   </dependencies>
   <build>
@@ -40,9 +35,9 @@
               <overWriteSnapshots>true</overWriteSnapshots>
               <artifactItems>
                 <artifactItem>
-                  <groupId>${pom.groupId}</groupId>
+                  <groupId>${project.groupId}</groupId>
                   <artifactId>jet-regression</artifactId>
-                  <version>${pom.version}</version>
+                  <version>${project.version}</version>
                   <classifier>javadoc</classifier>
                 </artifactItem>
               </artifactItems>
@@ -60,9 +55,9 @@
               <overWriteSnapshots>true</overWriteSnapshots>
               <artifactItems>
                 <artifactItem>
-                  <groupId>${pom.groupId}</groupId>
+                  <groupId>${project.groupId}</groupId>
                   <artifactId>jet-hypothesis</artifactId>
-                  <version>${pom.version}</version>
+                  <version>${project.version}</version>
                   <classifier>javadoc</classifier>
                 </artifactItem>
               </artifactItems>
@@ -97,13 +92,13 @@
             <id>bin</id>
             <phase>install</phase>
             <goals>
-              <goal>assembly</goal>
+              <goal>single</goal>
             </goals>
             <configuration>
               <descriptors>
                 <descriptor>${basedir}/src/assembly/assembly-bin.xml</descriptor>
               </descriptors>
-              <finalName>jet-${pom.version}</finalName>
+              <finalName>jet-${project.version}</finalName>
               <workDirectory>target/assembly/bin</workDirectory>
             </configuration>
           </execution>
@@ -111,13 +106,13 @@
             <id>src</id>
             <phase>install</phase>
             <goals>
-              <goal>assembly</goal>
+              <goal>single</goal>
             </goals>
             <configuration>
               <descriptors>
                 <descriptor>${basedir}/src/assembly/assembly-src.xml</descriptor>
               </descriptors>
-              <finalName>jet-${pom.version}</finalName>
+              <finalName>jet-${project.version}</finalName>
               <workDirectory>target/assembly/src</workDirectory>
             </configuration>
           </execution>
@@ -132,10 +127,4 @@
       </plugin>
     </plugins>
   </build>
-  <distributionManagement>
-    <site>
-      <id>codehaus.org</id>
-      <url>dav:https://dav.codehaus.org/jet</url>
-    </site>
-  </distributionManagement>
 </project>

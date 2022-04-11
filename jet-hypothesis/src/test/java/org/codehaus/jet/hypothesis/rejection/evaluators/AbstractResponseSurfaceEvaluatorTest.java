@@ -1,9 +1,11 @@
 package org.codehaus.jet.hypothesis.rejection.evaluators;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 import org.codehaus.jet.hypothesis.rejection.ResponseSurfaceEvaluator;
-import org.junit.Before;
+
+import org.junit.jupiter.api.BeforeEach;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 /**
  * 
@@ -13,7 +15,7 @@ public abstract class AbstractResponseSurfaceEvaluatorTest {
     
     private ResponseSurfaceEvaluator evaluator;
     
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         evaluator = createResponseSurfaceEvaluator();
     }
